@@ -1,0 +1,943 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="#" /><link rel="search" title="Search" href="search.html" />
+
+    <!-- Generated with Sphinx 7.1.2 and Furo 2023.07.26 --><title>Index - buildingdata 0.1 documentation</title>
+<link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">buildingdata 0.1 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  
+  <span class="sidebar-brand-text">buildingdata 0.1 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="io.html">IO</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of IO</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="io/converted.html">Converted IO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/diagnostics.html">Diagnostics IO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/extracted.html">Extracted IO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/ids.html">Ids IO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/merged.html">Merged IO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/ppt.html">PPT IO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/selection.html">Selection IO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/source.html">Source IO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/utils.html">Utility functions for IO module</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="identification.html">Identification</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Identification</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="identification/addresses.html">Address Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identification/identification.html">Identification Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identification/utils.html">Utility functions for identification module</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="extractor.html">Extractor</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Extractor</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="extractor/bdnb.html">BDNB extractor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extractor/bdtopo.html">BDTOPO extractor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extractor/ademe.html">ADEME extractor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extractor/utils.html">Utility functions for extractor module</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="convert.html">Convert data</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Convert data</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="convert/bdnb.html">Convert BDNB data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convert/bdtopo.html">Convert BDTOPO data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convert/ademe.html">Convert ADEME data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convert/nexity.html">Convert Nexity data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convert/utils.html">Utility functions for convert module</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="merge.html">Merge</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Merge</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="merge/columns.html">Merge data during conversion from source database to personal database organisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="merge/database.html">Merge data from two databases module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="merge/merge.html">Merge data Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="merge/utils.html">Utility functions for merge module</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="slides.html">Slides Generator</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Slides Generator</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="slides/picture_extractor.html">Picture Extractor module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides/generator.html">Slide Generation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides/PresentationChurn.html">Class PresentationChurn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides/utils.html">Utility functions for slides</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="maps.html">Maps API</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Maps API</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="maps/maps.html">Maps API module</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          
+<section class="genindex-section">
+  <h1 id="index">Index</h1>
+  <div class="genindex-jumpbox"><a href="#A"><strong>A</strong></a> | <a href="#B"><strong>B</strong></a> | <a href="#C"><strong>C</strong></a> | <a href="#E"><strong>E</strong></a> | <a href="#F"><strong>F</strong></a> | <a href="#G"><strong>G</strong></a> | <a href="#I"><strong>I</strong></a> | <a href="#L"><strong>L</strong></a> | <a href="#M"><strong>M</strong></a> | <a href="#N"><strong>N</strong></a> | <a href="#P"><strong>P</strong></a> | <a href="#Q"><strong>Q</strong></a> | <a href="#R"><strong>R</strong></a> | <a href="#S"><strong>S</strong></a> | <a href="#T"><strong>T</strong></a> | <a href="#W"><strong>W</strong></a></div>
+</section>
+<section id="A" class="genindex-section">
+  <h2>A</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="merge/merge.html#buildingdata.merge.merge.add_addresse">add_addresse() (in module buildingdata.merge.merge)</a>
+</li>
+        <li><a href="convert/utils.html#buildingdata.convert.utils.add_bdnb_id">add_bdnb_id() (in module buildingdata.convert.utils)</a>
+</li>
+        <li><a href="convert/utils.html#buildingdata.convert.utils.add_bdnb_id_nexity">add_bdnb_id_nexity() (in module buildingdata.convert.utils)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="merge/utils.html#buildingdata.merge.utils.add_data">add_data() (in module buildingdata.merge.utils)</a>
+</li>
+        <li><a href="extractor/utils.html#buildingdata.extractor.utils.add_id_col">add_id_col() (in module buildingdata.extractor.utils)</a>
+</li>
+        <li><a href="maps/maps.html#buildingdata.maps.maps.add_streetview_availability">add_streetview_availability() (in module buildingdata.maps.maps)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="B" class="genindex-section">
+  <h2>B</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    buildingdata.convert.ademe
+
+        <ul>
+          <li><a href="convert/ademe.html#module-buildingdata.convert.ademe">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.convert.bdnb
+
+        <ul>
+          <li><a href="convert/bdnb.html#module-buildingdata.convert.bdnb">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.convert.bdtopo
+
+        <ul>
+          <li><a href="convert/bdtopo.html#module-buildingdata.convert.bdtopo">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.convert.nexity
+
+        <ul>
+          <li><a href="convert/nexity.html#module-buildingdata.convert.nexity">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.convert.utils
+
+        <ul>
+          <li><a href="convert/utils.html#module-buildingdata.convert.utils">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.extractor.ademe
+
+        <ul>
+          <li><a href="extractor/ademe.html#module-buildingdata.extractor.ademe">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.extractor.bdnb
+
+        <ul>
+          <li><a href="extractor/bdnb.html#module-buildingdata.extractor.bdnb">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.extractor.bdtopo
+
+        <ul>
+          <li><a href="extractor/bdtopo.html#module-buildingdata.extractor.bdtopo">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.extractor.utils
+
+        <ul>
+          <li><a href="extractor/utils.html#module-buildingdata.extractor.utils">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.identification.addresses
+
+        <ul>
+          <li><a href="identification/addresses.html#module-buildingdata.identification.addresses">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.identification.identification
+
+        <ul>
+          <li><a href="identification/identification.html#module-buildingdata.identification.identification">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.identification.utils
+
+        <ul>
+          <li><a href="identification/utils.html#module-buildingdata.identification.utils">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.io.converted
+
+        <ul>
+          <li><a href="io/converted.html#module-buildingdata.io.converted">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.io.diagnostics
+
+        <ul>
+          <li><a href="io/diagnostics.html#module-buildingdata.io.diagnostics">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.io.extracted
+
+        <ul>
+          <li><a href="io/extracted.html#module-buildingdata.io.extracted">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    buildingdata.io.ids
+
+        <ul>
+          <li><a href="io/ids.html#module-buildingdata.io.ids">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.io.merged
+
+        <ul>
+          <li><a href="io/merged.html#module-buildingdata.io.merged">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.io.ppt
+
+        <ul>
+          <li><a href="io/ppt.html#module-buildingdata.io.ppt">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.io.selection
+
+        <ul>
+          <li><a href="io/selection.html#module-buildingdata.io.selection">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.io.source
+
+        <ul>
+          <li><a href="io/source.html#module-buildingdata.io.source">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.io.utils
+
+        <ul>
+          <li><a href="io/utils.html#module-buildingdata.io.utils">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.maps.maps
+
+        <ul>
+          <li><a href="maps/maps.html#module-buildingdata.maps.maps">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.merge.conversion
+
+        <ul>
+          <li><a href="merge/columns.html#module-buildingdata.merge.conversion">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.merge.database
+
+        <ul>
+          <li><a href="merge/database.html#module-buildingdata.merge.database">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.merge.merge
+
+        <ul>
+          <li><a href="merge/merge.html#module-buildingdata.merge.merge">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.merge.utils
+
+        <ul>
+          <li><a href="merge/utils.html#module-buildingdata.merge.utils">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.slides.generator
+
+        <ul>
+          <li><a href="slides/generator.html#module-buildingdata.slides.generator">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.slides.picture_extractor
+
+        <ul>
+          <li><a href="slides/picture_extractor.html#module-buildingdata.slides.picture_extractor">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.slides.PresentationChurn
+
+        <ul>
+          <li><a href="slides/PresentationChurn.html#module-buildingdata.slides.PresentationChurn">module</a>
+</li>
+        </ul></li>
+        <li>
+    buildingdata.slides.utils
+
+        <ul>
+          <li><a href="slides/utils.html#module-buildingdata.slides.utils">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="C" class="genindex-section">
+  <h2>C</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="identification/utils.html#buildingdata.identification.utils.change_addresses">change_addresses() (in module buildingdata.identification.utils)</a>
+</li>
+        <li><a href="io/utils.html#buildingdata.io.utils.check_directory_content">check_directory_content() (in module buildingdata.io.utils)</a>
+</li>
+        <li><a href="merge/utils.html#buildingdata.merge.utils.check_presence_df">check_presence_df() (in module buildingdata.merge.utils)</a>
+</li>
+        <li><a href="identification/utils.html#buildingdata.identification.utils.clean_address">clean_address() (in module buildingdata.identification.utils)</a>
+</li>
+        <li><a href="io/diagnostics.html#buildingdata.io.diagnostics.clean_diagnostics">clean_diagnostics() (in module buildingdata.io.diagnostics)</a>
+</li>
+        <li><a href="merge/utils.html#buildingdata.merge.utils.compare_data">compare_data() (in module buildingdata.merge.utils)</a>
+</li>
+        <li><a href="convert/ademe.html#buildingdata.convert.ademe.convert_ademe_data">convert_ademe_data() (in module buildingdata.convert.ademe)</a>
+</li>
+        <li><a href="convert/bdnb.html#buildingdata.convert.bdnb.convert_bdnb_data">convert_bdnb_data() (in module buildingdata.convert.bdnb)</a>
+</li>
+        <li><a href="convert/bdnb.html#buildingdata.convert.bdnb.convert_bdnb_table">convert_bdnb_table() (in module buildingdata.convert.bdnb)</a>
+</li>
+        <li><a href="convert/bdtopo.html#buildingdata.convert.bdtopo.convert_bdtopo_columms">convert_bdtopo_columms() (in module buildingdata.convert.bdtopo)</a>
+</li>
+        <li><a href="convert/bdtopo.html#buildingdata.convert.bdtopo.convert_bdtopo_data">convert_bdtopo_data() (in module buildingdata.convert.bdtopo)</a>
+</li>
+        <li><a href="convert/nexity.html#buildingdata.convert.nexity.convert_nexity_data">convert_nexity_data() (in module buildingdata.convert.nexity)</a>
+</li>
+        <li><a href="identification/identification.html#buildingdata.identification.identification.create_ademe_ids">create_ademe_ids() (in module buildingdata.identification.identification)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="identification/identification.html#buildingdata.identification.identification.create_bdnb_ids">create_bdnb_ids() (in module buildingdata.identification.identification)</a>
+</li>
+        <li><a href="identification/identification.html#buildingdata.identification.identification.create_bdtopo_ids">create_bdtopo_ids() (in module buildingdata.identification.identification)</a>
+</li>
+        <li><a href="merge/merge.html#buildingdata.merge.merge.create_data_dic">create_data_dic() (in module buildingdata.merge.merge)</a>
+</li>
+        <li><a href="io/selection.html#buildingdata.io.selection.create_database_mapping">create_database_mapping() (in module buildingdata.io.selection)</a>
+</li>
+        <li><a href="identification/identification.html#buildingdata.identification.identification.create_departement_indexed_ids">create_departement_indexed_ids() (in module buildingdata.identification.identification)</a>
+</li>
+        <li><a href="extractor/utils.html#buildingdata.extractor.utils.create_ids_proprietaire">create_ids_proprietaire() (in module buildingdata.extractor.utils)</a>
+</li>
+        <li><a href="merge/merge.html#buildingdata.merge.merge.create_index">create_index() (in module buildingdata.merge.merge)</a>
+</li>
+        <li><a href="io/selection.html#buildingdata.io.selection.create_merge_map">create_merge_map() (in module buildingdata.io.selection)</a>
+</li>
+        <li><a href="convert/utils.html#buildingdata.convert.utils.create_roof_map">create_roof_map() (in module buildingdata.convert.utils)</a>
+
+        <ul>
+          <li><a href="merge/utils.html#buildingdata.merge.utils.create_roof_map">(in module buildingdata.merge.utils)</a>
+</li>
+        </ul></li>
+        <li><a href="io/selection.html#buildingdata.io.selection.create_second_source_map">create_second_source_map() (in module buildingdata.io.selection)</a>
+</li>
+        <li><a href="io/selection.html#buildingdata.io.selection.create_source_map">create_source_map() (in module buildingdata.io.selection)</a>
+</li>
+        <li><a href="merge/utils.html#buildingdata.merge.utils.create_table_columns">create_table_columns() (in module buildingdata.merge.utils)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="E" class="genindex-section">
+  <h2>E</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="identification/addresses.html#buildingdata.identification.addresses.expand_nexity">expand_nexity() (in module buildingdata.identification.addresses)</a>
+</li>
+        <li><a href="extractor/ademe.html#buildingdata.extractor.ademe.extract_data">extract_data() (in module buildingdata.extractor.ademe)</a>
+
+        <ul>
+          <li><a href="extractor/bdnb.html#buildingdata.extractor.bdnb.extract_data">(in module buildingdata.extractor.bdnb)</a>
+</li>
+          <li><a href="extractor/bdtopo.html#buildingdata.extractor.bdtopo.extract_data">(in module buildingdata.extractor.bdtopo)</a>
+</li>
+        </ul></li>
+        <li><a href="identification/utils.html#buildingdata.identification.utils.extract_departement">extract_departement() (in module buildingdata.identification.utils)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="extractor/bdtopo.html#buildingdata.extractor.bdtopo.extract_departement_data">extract_departement_data() (in module buildingdata.extractor.bdtopo)</a>
+</li>
+        <li><a href="slides/picture_extractor.html#buildingdata.slides.picture_extractor.extract_ppt_pictures">extract_ppt_pictures() (in module buildingdata.slides.picture_extractor)</a>
+</li>
+        <li><a href="extractor/ademe.html#buildingdata.extractor.ademe.extract_table">extract_table() (in module buildingdata.extractor.ademe)</a>
+
+        <ul>
+          <li><a href="extractor/bdnb.html#buildingdata.extractor.bdnb.extract_table">(in module buildingdata.extractor.bdnb)</a>
+</li>
+          <li><a href="extractor/bdtopo.html#buildingdata.extractor.bdtopo.extract_table">(in module buildingdata.extractor.bdtopo)</a>
+</li>
+        </ul></li>
+        <li><a href="io/utils.html#buildingdata.io.utils.extract_table_name">extract_table_name() (in module buildingdata.io.utils)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="F" class="genindex-section">
+  <h2>F</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="merge/utils.html#buildingdata.merge.utils.format_data">format_data() (in module buildingdata.merge.utils)</a>
+</li>
+        <li><a href="merge/merge.html#buildingdata.merge.merge.format_dataframe">format_dataframe() (in module buildingdata.merge.merge)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="merge/utils.html#buildingdata.merge.utils.format_date_range">format_date_range() (in module buildingdata.merge.utils)</a>
+</li>
+        <li><a href="merge/utils.html#buildingdata.merge.utils.format_toiture">format_toiture() (in module buildingdata.merge.utils)</a>
+</li>
+        <li><a href="merge/utils.html#buildingdata.merge.utils.format_vitrage">format_vitrage() (in module buildingdata.merge.utils)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="G" class="genindex-section">
+  <h2>G</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="slides/generator.html#buildingdata.slides.generator.generate_slides">generate_slides() (in module buildingdata.slides.generator)</a>
+</li>
+        <li><a href="slides/picture_extractor.html#buildingdata.slides.picture_extractor.get_addresse">get_addresse() (in module buildingdata.slides.picture_extractor)</a>
+</li>
+        <li><a href="maps/maps.html#buildingdata.maps.maps.get_api_status">get_api_status() (in module buildingdata.maps.maps)</a>
+</li>
+        <li><a href="io/utils.html#buildingdata.io.utils.get_bdnb_source_table">get_bdnb_source_table() (in module buildingdata.io.utils)</a>
+</li>
+        <li><a href="io/utils.html#buildingdata.io.utils.get_col">get_col() (in module buildingdata.io.utils)</a>
+</li>
+        <li><a href="io/utils.html#buildingdata.io.utils.get_columns">get_columns() (in module buildingdata.io.utils)</a>
+</li>
+        <li><a href="io/utils.html#buildingdata.io.utils.get_merge_ranges">get_merge_ranges() (in module buildingdata.io.utils)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="io/utils.html#buildingdata.io.utils.get_new_column">get_new_column() (in module buildingdata.io.utils)</a>
+</li>
+        <li><a href="io/utils.html#buildingdata.io.utils.get_new_label">get_new_label() (in module buildingdata.io.utils)</a>
+</li>
+        <li><a href="io/utils.html#buildingdata.io.utils.get_new_table">get_new_table() (in module buildingdata.io.utils)</a>
+</li>
+        <li><a href="merge/merge.html#buildingdata.merge.merge.get_percentage">get_percentage() (in module buildingdata.merge.merge)</a>
+</li>
+        <li><a href="convert/bdtopo.html#buildingdata.convert.bdtopo.get_roof_name">get_roof_name() (in module buildingdata.convert.bdtopo)</a>
+</li>
+        <li><a href="io/utils.html#buildingdata.io.utils.get_second_source_label">get_second_source_label() (in module buildingdata.io.utils)</a>
+</li>
+        <li><a href="maps/maps.html#buildingdata.maps.maps.get_streetview_availability">get_streetview_availability() (in module buildingdata.maps.maps)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="I" class="genindex-section">
+  <h2>I</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="slides/utils.html#buildingdata.slides.utils.images_available">images_available() (in module buildingdata.slides.utils)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="L" class="genindex-section">
+  <h2>L</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="io/source.html#buildingdata.io.source.load_address_data">load_address_data() (in module buildingdata.io.source)</a>
+</li>
+        <li><a href="identification/addresses.html#buildingdata.identification.addresses.load_addresses">load_addresses() (in module buildingdata.identification.addresses)</a>
+
+        <ul>
+          <li><a href="slides/utils.html#buildingdata.slides.utils.load_addresses">(in module buildingdata.slides.utils)</a>
+</li>
+        </ul></li>
+        <li><a href="io/extracted.html#buildingdata.io.extracted.load_ademe_data">load_ademe_data() (in module buildingdata.io.extracted)</a>
+
+        <ul>
+          <li><a href="io/source.html#buildingdata.io.source.load_ademe_data">(in module buildingdata.io.source)</a>
+</li>
+        </ul></li>
+        <li><a href="io/selection.html#buildingdata.io.selection.load_ademe_selection">load_ademe_selection() (in module buildingdata.io.selection)</a>
+</li>
+        <li><a href="io/ids.html#buildingdata.io.ids.load_all_ids">load_all_ids() (in module buildingdata.io.ids)</a>
+</li>
+        <li><a href="io/extracted.html#buildingdata.io.extracted.load_bdnb_data">load_bdnb_data() (in module buildingdata.io.extracted)</a>
+
+        <ul>
+          <li><a href="io/source.html#buildingdata.io.source.load_bdnb_data">(in module buildingdata.io.source)</a>
+</li>
+        </ul></li>
+        <li><a href="io/selection.html#buildingdata.io.selection.load_bdnb_selection">load_bdnb_selection() (in module buildingdata.io.selection)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="io/selection.html#buildingdata.io.selection.load_bdtopo_selection">load_bdtopo_selection() (in module buildingdata.io.selection)</a>
+</li>
+        <li><a href="io/converted.html#buildingdata.io.converted.load_converted_data">load_converted_data() (in module buildingdata.io.converted)</a>
+</li>
+        <li><a href="io/selection.html#buildingdata.io.selection.load_departement_selection">load_departement_selection() (in module buildingdata.io.selection)</a>
+</li>
+        <li><a href="io/converted.html#buildingdata.io.converted.load_frames_columns">load_frames_columns() (in module buildingdata.io.converted)</a>
+</li>
+        <li><a href="io/ids.html#buildingdata.io.ids.load_ids">load_ids() (in module buildingdata.io.ids)</a>
+</li>
+        <li><a href="io/merged.html#buildingdata.io.merged.load_merged_data">load_merged_data() (in module buildingdata.io.merged)</a>
+</li>
+        <li><a href="io/ppt.html#buildingdata.io.ppt.load_presentation">load_presentation() (in module buildingdata.io.ppt)</a>
+</li>
+        <li><a href="io/utils.html#buildingdata.io.utils.load_roof_map">load_roof_map() (in module buildingdata.io.utils)</a>
+</li>
+        <li><a href="io/ppt.html#buildingdata.io.ppt.load_solar_presentation">load_solar_presentation() (in module buildingdata.io.ppt)</a>
+</li>
+        <li><a href="io/selection.html#buildingdata.io.selection.load_tables_names">load_tables_names() (in module buildingdata.io.selection)</a>
+</li>
+        <li><a href="io/ppt.html#buildingdata.io.ppt.load_template">load_template() (in module buildingdata.io.ppt)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="M" class="genindex-section">
+  <h2>M</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="merge/merge.html#buildingdata.merge.merge.merge_all_data">merge_all_data() (in module buildingdata.merge.merge)</a>
+</li>
+        <li><a href="merge/database.html#buildingdata.merge.database.merge_base_to_ademe">merge_base_to_ademe() (in module buildingdata.merge.database)</a>
+</li>
+        <li><a href="merge/database.html#buildingdata.merge.database.merge_base_to_bdtopo">merge_base_to_bdtopo() (in module buildingdata.merge.database)</a>
+</li>
+        <li><a href="merge/database.html#buildingdata.merge.database.merge_base_to_nexity">merge_base_to_nexity() (in module buildingdata.merge.database)</a>
+</li>
+        <li><a href="merge/columns.html#buildingdata.merge.conversion.merge_columns">merge_columns() (in module buildingdata.merge.conversion)</a>
+</li>
+        <li><a href="merge/merge.html#buildingdata.merge.merge.merge_diagnostics">merge_diagnostics() (in module buildingdata.merge.merge)</a>
+</li>
+        <li><a href="merge/utils.html#buildingdata.merge.utils.merge_rows">merge_rows() (in module buildingdata.merge.utils)</a>
+</li>
+        <li><a href="merge/merge.html#buildingdata.merge.merge.merge_same_address">merge_same_address() (in module buildingdata.merge.merge)</a>
+</li>
+        <li><a href="merge/database.html#buildingdata.merge.database.merge_second_source_to_base">merge_second_source_to_base() (in module buildingdata.merge.database)</a>
+</li>
+        <li>
+    module
+
+        <ul>
+          <li><a href="convert/ademe.html#module-buildingdata.convert.ademe">buildingdata.convert.ademe</a>
+</li>
+          <li><a href="convert/bdnb.html#module-buildingdata.convert.bdnb">buildingdata.convert.bdnb</a>
+</li>
+          <li><a href="convert/bdtopo.html#module-buildingdata.convert.bdtopo">buildingdata.convert.bdtopo</a>
+</li>
+          <li><a href="convert/nexity.html#module-buildingdata.convert.nexity">buildingdata.convert.nexity</a>
+</li>
+          <li><a href="convert/utils.html#module-buildingdata.convert.utils">buildingdata.convert.utils</a>
+</li>
+          <li><a href="extractor/ademe.html#module-buildingdata.extractor.ademe">buildingdata.extractor.ademe</a>
+</li>
+          <li><a href="extractor/bdnb.html#module-buildingdata.extractor.bdnb">buildingdata.extractor.bdnb</a>
+</li>
+          <li><a href="extractor/bdtopo.html#module-buildingdata.extractor.bdtopo">buildingdata.extractor.bdtopo</a>
+</li>
+          <li><a href="extractor/utils.html#module-buildingdata.extractor.utils">buildingdata.extractor.utils</a>
+</li>
+          <li><a href="identification/addresses.html#module-buildingdata.identification.addresses">buildingdata.identification.addresses</a>
+</li>
+          <li><a href="identification/identification.html#module-buildingdata.identification.identification">buildingdata.identification.identification</a>
+</li>
+          <li><a href="identification/utils.html#module-buildingdata.identification.utils">buildingdata.identification.utils</a>
+</li>
+          <li><a href="io/converted.html#module-buildingdata.io.converted">buildingdata.io.converted</a>
+</li>
+          <li><a href="io/diagnostics.html#module-buildingdata.io.diagnostics">buildingdata.io.diagnostics</a>
+</li>
+          <li><a href="io/extracted.html#module-buildingdata.io.extracted">buildingdata.io.extracted</a>
+</li>
+          <li><a href="io/ids.html#module-buildingdata.io.ids">buildingdata.io.ids</a>
+</li>
+          <li><a href="io/merged.html#module-buildingdata.io.merged">buildingdata.io.merged</a>
+</li>
+          <li><a href="io/ppt.html#module-buildingdata.io.ppt">buildingdata.io.ppt</a>
+</li>
+          <li><a href="io/selection.html#module-buildingdata.io.selection">buildingdata.io.selection</a>
+</li>
+          <li><a href="io/source.html#module-buildingdata.io.source">buildingdata.io.source</a>
+</li>
+          <li><a href="io/utils.html#module-buildingdata.io.utils">buildingdata.io.utils</a>
+</li>
+          <li><a href="maps/maps.html#module-buildingdata.maps.maps">buildingdata.maps.maps</a>
+</li>
+          <li><a href="merge/columns.html#module-buildingdata.merge.conversion">buildingdata.merge.conversion</a>
+</li>
+          <li><a href="merge/database.html#module-buildingdata.merge.database">buildingdata.merge.database</a>
+</li>
+          <li><a href="merge/merge.html#module-buildingdata.merge.merge">buildingdata.merge.merge</a>
+</li>
+          <li><a href="merge/utils.html#module-buildingdata.merge.utils">buildingdata.merge.utils</a>
+</li>
+          <li><a href="slides/generator.html#module-buildingdata.slides.generator">buildingdata.slides.generator</a>
+</li>
+          <li><a href="slides/picture_extractor.html#module-buildingdata.slides.picture_extractor">buildingdata.slides.picture_extractor</a>
+</li>
+          <li><a href="slides/PresentationChurn.html#module-buildingdata.slides.PresentationChurn">buildingdata.slides.PresentationChurn</a>
+</li>
+          <li><a href="slides/utils.html#module-buildingdata.slides.utils">buildingdata.slides.utils</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="N" class="genindex-section">
+  <h2>N</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="convert/utils.html#buildingdata.convert.utils.normalize_bdtopo_data">normalize_bdtopo_data() (in module buildingdata.convert.utils)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="convert/utils.html#buildingdata.convert.utils.normalize_data">normalize_data() (in module buildingdata.convert.utils)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="P" class="genindex-section">
+  <h2>P</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="slides/picture_extractor.html#buildingdata.slides.picture_extractor.picture_names_generator">picture_names_generator() (in module buildingdata.slides.picture_extractor)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Q" class="genindex-section">
+  <h2>Q</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="maps/maps.html#buildingdata.maps.maps.query_image">query_image() (in module buildingdata.maps.maps)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="R" class="genindex-section">
+  <h2>R</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="io/diagnostics.html#buildingdata.io.diagnostics.read_diagnostic">read_diagnostic() (in module buildingdata.io.diagnostics)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="S" class="genindex-section">
+  <h2>S</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="io/selection.html#buildingdata.io.selection.select_bdnb_columns">select_bdnb_columns() (in module buildingdata.io.selection)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="extractor/utils.html#buildingdata.extractor.utils.setup_proprietaire">setup_proprietaire() (in module buildingdata.extractor.utils)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="T" class="genindex-section">
+  <h2>T</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="identification/utils.html#buildingdata.identification.utils.treat">treat() (in module buildingdata.identification.utils)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="identification/utils.html#buildingdata.identification.utils.treat_multiple">treat_multiple() (in module buildingdata.identification.utils)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="W" class="genindex-section">
+  <h2>W</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="io/extracted.html#buildingdata.io.extracted.write_ademe_data">write_ademe_data() (in module buildingdata.io.extracted)</a>
+</li>
+        <li><a href="io/extracted.html#buildingdata.io.extracted.write_bdnb_data">write_bdnb_data() (in module buildingdata.io.extracted)</a>
+</li>
+        <li><a href="io/merged.html#buildingdata.io.merged.write_columns">write_columns() (in module buildingdata.io.merged)</a>
+</li>
+        <li><a href="io/converted.html#buildingdata.io.converted.write_converted_data">write_converted_data() (in module buildingdata.io.converted)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="io/diagnostics.html#buildingdata.io.diagnostics.write_diagnostic_data">write_diagnostic_data() (in module buildingdata.io.diagnostics)</a>
+</li>
+        <li><a href="io/ids.html#buildingdata.io.ids.write_ids">write_ids() (in module buildingdata.io.ids)</a>
+</li>
+        <li><a href="io/ppt.html#buildingdata.io.ppt.write_image">write_image() (in module buildingdata.io.ppt)</a>
+</li>
+        <li><a href="io/merged.html#buildingdata.io.merged.write_merged_data">write_merged_data() (in module buildingdata.io.merged)</a>
+</li>
+        <li><a href="io/ppt.html#buildingdata.io.ppt.write_presentation">write_presentation() (in module buildingdata.io.ppt)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023, John Levy
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=e031e9a9"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/scripts/furo.js?v=32e29ea5"></script>
+    </body>
+</html>
