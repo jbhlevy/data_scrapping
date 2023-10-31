@@ -100,7 +100,7 @@ def query_image(addr: str) -> None:
         {
             "size": "500x500",
             "location": addr,
-            "key": "AIzaSyAZMFl5AVClxzslrjrDUWY0yqQ32-0mqUo",
+            "key": API_KEY,
         }
     ]
     results = google_streetview.api.results(params)
